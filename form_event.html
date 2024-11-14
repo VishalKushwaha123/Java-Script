@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <form action="/action">
+    <input placeholder="username" />
+    <button> register</button>
+  </form>
+  <script>
+    let form = document.querySelector("form");
+    form.addEventListener("submit", function () {
+      // alert("form submitted");
+      event.preventDefault();              //agar jo action url par nahi rukna hai to ye line likhna padegaa
+      console.log("form submitted");
+    })
+  </script>
+</body>
+
+</html>
